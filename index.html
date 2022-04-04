@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Touch the Numbers</title>
+</head>
+
+<body onload="init()">
+    <h1>Touch the Numbers</h1>
+
+    <div>
+        <p class="msg">Please select your level:</p>
+        <form autocomplete="off" class="radio-btn">
+            <input type="radio" class="easy" name="difficulties" value="Easy" onclick="setDifficulty(this)" checked>
+            <label class="easy" for="easy">Easy</label><br>
+
+            <input type="radio" class="Hard" name="difficulties" value="Hard" onclick="setDifficulty(this)">
+            <label class="easy" for="hard">Hard</label><br>
+
+            <input type="radio" class="Extreme" name="difficulties" value="Extreme" onclick="setDifficulty(this)">
+            <label for="extreme">Extreme</label><br><br>
+        </form>
+    </div>
+    
+    <button onclick="init()">Start Over</button>
+    <br>
+    <p class="timmer">Time play:<span class="timmer"></span></p>
+    
+    <table border="1" cellpadding="10">
+        <thead>
+            <th class="header" colspan="4">Start game</th>
+            <tbody class="board">
+                
+            </tbody>
+        </thead>
+    </table>
+    <br>
+    <p class="best-time">Best time:<span class="best-time"></span> </p>
+
+    <table  border="1" cellpadding="10">
+        <thead>
+            <tbody class="board">
+                <tr>
+                    <td>Easy</td>
+                    <td class="easyTr"></td>                    
+                </tr>
+                <tr>
+                    <td>Hard</td>
+                    <td class="hardTr"></td>                    
+                </tr>
+                <tr>
+                    <td>Extreme</td>
+                    <td class="extremeTr"></td>                    
+                </tr>
+
+            </tbody>
+        </thead>
+    </table>
+
+    <img class="fire" src="audio/fireworks.gif" />
+    <script src="js/main.js"></script>
+    <script src="js/util.js"></script>
+</body>
+
+</html>

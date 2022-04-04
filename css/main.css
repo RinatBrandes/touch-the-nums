@@ -1,0 +1,77 @@
+body{
+    background-color: #fff3e1;
+    /*background-color: black;*/
+    color: black;
+    text-align: center;
+}
+
+button{
+    background-color: #cbbaac;
+    color:black;
+    visibility: hidden;
+    /* display: none; */
+    margin: auto;
+    font-size: 22px;
+
+}
+
+.msg{
+    font-size: 22px;
+}
+
+.radio-btn{    
+    color: #cbbaac;
+    display: inline-flex;
+    font-size: 22px;
+}
+
+table{
+    background-color: #cbbaac;
+    color:black;
+    text-align: center;
+    margin: auto;
+    font-size: 30px;
+    
+}
+
+.board td {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.cliked{
+    background-color: #ebe0d0;
+    color: black;
+}
+
+th{
+    text-align: center;
+    background-color: #cbbaac;
+    color:black;
+    font-size: 22px;
+}
+
+.timmer{
+    color: black;
+    font-size: 30px;
+    display: inline;
+
+}
+
+.best-time{
+    color: black;
+    font-size: 30px;
+    display: inline;
+    margin-left: 100px;
+}
+
+.easyTr .hardTr .extremeTr{    
+    width: 500px;
+}
+
+
+.fire{
+    display: none;
+}
